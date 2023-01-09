@@ -8,6 +8,7 @@ import org.oop.lab3.Environment;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertSame;
 
+
 public class Example {
 
     private Container container;
@@ -31,8 +32,8 @@ public class Example {
     @Test
     public void shouldBuildInjectionGraph() {
         /*
-        binder.bind(org.oop.A.class, org.oop.B.class);
-        binder.bind(org.oop.B.class, new org.oop.B());
+        binder.bind(A.class, B.class);
+        binder.bind(B.class, new B());
         */
         final B bAsSingleton = container.getComponent(B.class);
         assertSame(container.getComponent(A.class), bAsSingleton);
