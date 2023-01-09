@@ -4,21 +4,19 @@ import javax.inject.Inject;
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.Callable;
+import java.util.Set;
 
 public class MyBinder implements Binder {
-    private final Map<Class, Callable> rules = new HashMap<>();
-    private final MethodCreator methodCreator = new MethodCreator();
+    private final Map<Class, Creator> rules = new HashMap<>();
 
-    public <T> Callable<T> getMethod(Class<T> clazz) {
+    public <T> Creator<T> getCreator(Class<T> clazz) {
         return rules.get(clazz);
     }
 
-    public <T> void saveRule(Class<T> clazz, Constructor<T> constructor) {
-        constructor.setAccessible(true);
-        Callable<T> method = (Callable<T>) methodCreator.createByConstructor(constructor);
-        rules.put(clazz, method);
+    Set<Class> getClasses() {
+        return rules.keySet();
     }
+
 
     private <T> Constructor<T> findInject(Class<T> clazz) throws RuntimeException {
         boolean injectExist = false;
@@ -51,28 +49,36 @@ public class MyBinder implements Binder {
     @Override
     public <T> void bind(Class<T> clazz) throws RuntimeException {
         Constructor<T> injectConstructor = findInject(clazz);
-        saveRule(clazz, injectConstructor);
+        injectConstructor.setAccessible(true);
+        Creator<T> creator = new Creator<>(injectConstructor);
+        rules.put(clazz, creator);
     }
 
     @Override
     public <T> void bind(Class<T> clazz, Class<? extends T> implementation) {
-        Constructor<T> injectConstructor = (Constructor<T>) findInject(implementation);
-        saveRule(clazz, injectConstructor);
+        Constructor<? extends T> injectConstructor = findInject(implementation);
+        injectConstructor.setAccessible(true);
+        Creator<T> creator = new Creator<>(injectConstructor, implementation);
+        rules.put(clazz, creator);
     }
 
     @Override
     public <T> void bind(Class<T> clazz, T instance) {
-        Callable<T> method = methodCreator.createByInstance(instance);
-        rules.put(clazz, method);
+        Creator<T> creator = new Creator<>(instance);
+        rules.put(clazz, creator);
     }
 
     public <T> void bind(Class<T> clazz, Class[] parameters) {
         Constructor<T> constructor = findConstructor(clazz, parameters);
-        saveRule(clazz, constructor);
+        constructor.setAccessible(true);
+        Creator<T> creator = new Creator<>(constructor);
+        rules.put(clazz, creator);
     }
 
     public <T> void bind(Class<T> clazz, Class<? extends T> implementation, Class[] parameters) {
-        Constructor<T> constructor = (Constructor<T>) findConstructor(implementation, parameters);
-        saveRule(clazz, constructor);
+        Constructor<? extends T> constructor = findConstructor(implementation, parameters);
+        constructor.setAccessible(true);
+        Creator<T> creator = new Creator<>(constructor, implementation);
+        rules.put(clazz, creator);
     }
 }

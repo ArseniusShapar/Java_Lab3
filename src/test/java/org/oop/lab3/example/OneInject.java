@@ -5,6 +5,5 @@ import javax.inject.Inject;
 public class OneInject {
     @Inject
     public OneInject() {
-
     }
 }

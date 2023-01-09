@@ -6,4 +6,8 @@ public interface Binder {
     <T> void bind(Class<T> clazz, Class<? extends T> implementation);
 
     <T> void bind(Class<T> clazz, T instance);
+
+    <T> void bind(Class<T> clazz, Class[] parameters);
+
+    <T> void bind(Class<T> clazz, Class<? extends T> implementation, Class[] parameters);
 }

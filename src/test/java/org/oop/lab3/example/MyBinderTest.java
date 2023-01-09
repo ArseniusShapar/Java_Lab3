@@ -29,6 +29,7 @@ public class MyBinderTest {
     @Test
     public void testOneInjection() {
         binder.bind(OneInject.class);
+        binder.getCreator(OneInject.class);
     }
 
     @Test
@@ -46,6 +47,21 @@ public class MyBinderTest {
     @Test
     public void testPrivateInjection() {
         binder.bind(PrivateInject.class);
+        binder.getCreator(PrivateInject.class);
+    }
+
+    @Test
+    public void testBindByGivenParams() {
+        Class[] params = {int.class, float.class};
+        binder.bind(ManyParams.class, params);
+        binder.getCreator(ManyParams.class);
+    }
+
+    @Test
+    public void testBindWithImplementation() {
+        Class[] params = {};
+        binder.bind(Parent.class, Child.class, params);
+        binder.getCreator(Parent.class);
     }
 
 }

@@ -4,21 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5152c958-7895-4a4a-bf21-d7ee6ca1431d" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/oop/lab3/MethodCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/oop/lab3/MyContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/MyBinderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/OneInject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/PrivateInject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/TwoInject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/ZeroInject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="5152c958-7895-4a4a-bf21-d7ee6ca1431d" name="Changes" comment="Version with creating callable methods instead of constructors">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/oop/lab3/Creator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/oop/lab3/MyConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/oop/lab3/MyEnvironment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/Instance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/ManyParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/MyContainerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/WithDependency.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/oop/lab3/Binder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/oop/lab3/Binder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/oop/lab3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/oop/lab3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/oop/lab3/MethodCreator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/oop/lab3/MyBinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/oop/lab3/MyBinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/oop/lab3/MyContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/oop/lab3/MyContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/stub/src/main/Binder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/stub/src/main/Configuration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/stub/src/main/Container.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/stub/src/main/Environment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/DummyBinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/DummyContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/DummyEnvironment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/Example.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/MyBinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/MyBinderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/MyConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/TestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/MyPrototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/MyPrototype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/MySingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/MySingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/OneInject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/OneInject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/PrivateInject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/PrivateInject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/TwoInject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/TwoInject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/UseA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/ZeroInject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/oop/lab3/example/ZeroInject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +63,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -82,21 +103,8 @@
       <recent name="C:\Users\Arseniy\IdeaProjects\lab3\src\main\stub\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Example.shouldInjectSingleton">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.oop.lab3.Main" />
-      <module name="lab3.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.oop.lab3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Example" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyContainerTest">
+    <configuration name="MyBinderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab3.test" />
       <extension name="coverage">
         <pattern>
@@ -105,13 +113,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.oop.lab3.example" />
-      <option name="MAIN_CLASS_NAME" value="org.oop.lab3.example.Example" />
+      <option name="MAIN_CLASS_NAME" value="org.oop.lab3.example.MyBinderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Example.shouldInjectSingleton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyBinderTest.testBindByGivenParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab3.test" />
       <extension name="coverage">
         <pattern>
@@ -120,14 +128,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.oop.lab3.example" />
-      <option name="MAIN_CLASS_NAME" value="org.oop.lab3.example.Example" />
-      <option name="METHOD_NAME" value="shouldInjectSingleton" />
+      <option name="MAIN_CLASS_NAME" value="org.oop.lab3.example.MyBinderTest" />
+      <option name="METHOD_NAME" value="testBindByGivenParams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyBinderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyBinderTest.testBindWithImplementation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab3.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.oop.lab3.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.oop.lab3.example" />
+      <option name="MAIN_CLASS_NAME" value="org.oop.lab3.example.MyBinderTest" />
+      <option name="METHOD_NAME" value="testBindWithImplementation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab3.test" />
       <extension name="coverage" sample_coverage="false" track_test_folders="true">
         <pattern>
@@ -136,14 +160,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.oop.lab3.example" />
-      <option name="MAIN_CLASS_NAME" value="org.oop.lab3.example.MyBinderTest" />
+      <option name="MAIN_CLASS_NAME" value="org.oop.lab3.example.MyContainerTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyBinderTest.testPrivateInject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyContainerTest.testManyParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab3.test" />
       <extension name="coverage">
         <pattern>
@@ -152,20 +176,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.oop.lab3.example" />
-      <option name="MAIN_CLASS_NAME" value="org.oop.lab3.example.MyBinderTest" />
-      <option name="METHOD_NAME" value="testPrivateInject" />
+      <option name="MAIN_CLASS_NAME" value="org.oop.lab3.example.MyContainerTest" />
+      <option name="METHOD_NAME" value="testManyParams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.MyBinderTest" />
+      <item itemvalue="JUnit.MyBinderTest.testBindByGivenParams" />
+      <item itemvalue="JUnit.MyBinderTest.testBindWithImplementation" />
+      <item itemvalue="JUnit.MyContainerTest" />
+      <item itemvalue="JUnit.MyContainerTest.testManyParams" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Example.shouldInjectSingleton" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MyContainerTest" />
+        <item itemvalue="JUnit.MyBinderTest.testBindByGivenParams" />
         <item itemvalue="JUnit.MyBinderTest" />
-        <item itemvalue="JUnit.Example" />
-        <item itemvalue="JUnit.MyBinderTest.testPrivateInject" />
+        <item itemvalue="JUnit.MyBinderTest.testBindWithImplementation" />
+        <item itemvalue="JUnit.MyContainerTest.testManyParams" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +210,7 @@
       <updated>1673042798109</updated>
       <workItem from="1673042800358" duration="5977000" />
       <workItem from="1673119696304" duration="12036000" />
-      <workItem from="1673136105859" duration="13668000" />
+      <workItem from="1673136105859" duration="38509000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1673119818742</created>
@@ -188,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673119818742</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Version with creating callable methods instead of constructors">
+      <created>1673227909713</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673227909713</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,14 +245,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Version with creating callable methods instead of constructors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version with creating callable methods instead of constructors" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lab3$MyContainerTest.ic" NAME="MyContainerTest Coverage Results" MODIFIED="1673306931594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.oop.lab3.example.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/lab3$Example.ic" NAME="Example Coverage Results" MODIFIED="1673140323227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.oop.lab3.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lab3$MyContainerTest_testInstance.ic" NAME="MyContainerTest.testInstance Coverage Results" MODIFIED="1673292657890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.oop.lab3.example.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/lab3$MyBinderTest.ic" NAME="MyBinderTest Coverage Results" MODIFIED="1673140629068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">

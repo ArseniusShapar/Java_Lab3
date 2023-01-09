@@ -2,8 +2,8 @@ package org.oop.lab3.example;
 
 import javax.inject.Inject;
 
-public class MyPrototype {
+public class Parent {
     @Inject
-    public MyPrototype() {
+    public Parent() {
     }
 }
