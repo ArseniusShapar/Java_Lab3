@@ -1,9 +1,12 @@
-package org.oop.lab3.example;
+package org.oop.lab3.test.test_classes;
+
+import javax.inject.Inject;
 
 public class ManyParams {
     private final int a;
     private final float b;
 
+    @Inject
     public ManyParams(int a, float b) {
         this.a = a;
         this.b = b;

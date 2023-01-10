@@ -1,4 +1,4 @@
-package org.oop.lab3.example;
+package org.oop.lab3.test.test_classes;
 
 import javax.inject.Singleton;
 

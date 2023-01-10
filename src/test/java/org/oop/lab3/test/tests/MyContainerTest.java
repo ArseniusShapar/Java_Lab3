@@ -1,10 +1,11 @@
-package org.oop.lab3.example;
+package org.oop.lab3.test.tests;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.oop.lab3.MyBinder;
 import org.oop.lab3.MyContainer;
 import org.oop.lab3.MyEnvironment;
+import org.oop.lab3.test.test_classes.*;
 
 import static org.junit.Assert.*;
 
